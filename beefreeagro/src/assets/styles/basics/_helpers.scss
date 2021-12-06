@@ -1,0 +1,130 @@
+//Boarder-radius
+.br4 {
+  border-radius: 4px;
+}
+.br8 {
+  border-radius: 8px;
+}
+
+//btn
+
+.btn {
+  cursor: pointer;
+}
+
+// Font Sizes
+.fs12 {
+  font-size: rem(12px);
+}
+.fs14 {
+  font-size: rem(14px);
+}
+.fs18 {
+  font-size: rem(18px);
+}
+.fs20 {
+  font-size: rem(20px);
+}
+.fs24 {
+  font-size: rem(24px);
+}
+.fs28 {
+  font-size: rem(28px);
+}
+.fs30 {
+  font-size: rem(30px);
+}
+
+// List
+.clean-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  & > li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//Text Ellipsis
+.text-cmp {
+  height: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-wrap {
+  overflow: hidden;
+}
+
+.b-txt {
+  font-weight: bold;
+  letter-spacing: 0.1;
+}
+
+// flex helpers
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.justify-end {
+    justify-content: end;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-around {
+    justify-content: space-around;
+  }
+
+  &.space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &.auto-center {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+// Media helpers
+
+.square-ratio {
+  @include aspect-ratio(1, 1);
+}
+.video-ratio {
+  @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+  @include aspect-ratio(9, 16);
+}

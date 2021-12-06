@@ -1,0 +1,67 @@
+.app {
+    height: 100vh;
+    background: rgb(254,237,211);
+background: linear-gradient(137deg, rgba(254,237,211,1) 0%, rgba(167,205,244,1) 100%);
+}
+
+.login-page {
+    height: 100vh;
+    .user-img{
+        width: 150px;
+    }
+    
+    input {
+        height: 50px;
+        width: 250px;
+        border-radius: 30px;
+        padding: 20px;
+        padding-left: 40px;
+    }
+    form {
+        gap: 20px;
+    }
+    label {
+        position: relative;
+        img {
+            width: 17px;
+            position:absolute;
+            top: 35%;
+            transform: translateX(50);
+            left: 10px;
+            opacity: .7;
+        }
+        .eye-pass {
+            left: 87%;
+        }
+    }
+    .signup-btn{
+        color: #04537d;
+        &:hover {
+            text-decoration: underline;
+            color: #1d76d1;
+        }
+    }
+    .login-btn {
+        width: 150px;
+        height: 50px;
+        color: white;
+        font-size: 1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #04537d;
+        border-radius: 30px;
+    }
+}
+
+.home-page{
+    height: 100vh;
+    .logout-btn {
+        margin-top: 10px;
+        width: 100px;
+        height: 30px;
+        color: white;
+        font-size: .8rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #8a1616;
+        border-radius: 30px;
+    }
+}

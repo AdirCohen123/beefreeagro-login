@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI';
+}
+
+body {
+  margin: 0;
+  background-color: $clr4;
+  color: $clr1;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+  font-family: 'Segoe UI';
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  line-height: 1;
+  height: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+textarea,
+input {
+  outline: none;
+  border: none;
+  resize: none;
+  max-height: 80px;
+  font-family: 'Segoe UI';
+}
